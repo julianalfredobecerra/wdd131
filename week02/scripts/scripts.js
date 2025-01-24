@@ -21,4 +21,4 @@ button.addEventListener('click', function () {
         input.value = '';
         input.focus();
     }
-});
+}); 
