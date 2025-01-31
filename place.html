@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
 </head>
 <body>
     <header>
@@ -12,29 +13,29 @@
     </header>
     <div class="hero">
         <picture>
-            <source srcset="images/hero-large.webp" media="min-width: 1000px">
-            <source srcset="images/hero-medium.webp" media="min-width: 500px">
+            <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
             <img src="images/hero-small.webp" alt="Torres del Paine" width="250" height="500">
         </picture>
     </div>
     <section class="data">
         <h2>Data</h2>
-        <p><strong>Area:</strong> 587,041 sq km</p>
+        <p><strong>Area:</strong> 2,400 km²</p>
         <p><strong>Population:</strong> 27,691,018</p>
-        <p><strong>Capital:</strong> Antananarivo</p>
-        <p><strong>Languages:</strong> Malagasy, French</p>
-        <p><strong>Currency:</strong> Malagasy Ariary</p>
-        <p><strong>Time Zone:</strong> UTC+3</p>
-        <p><strong>Calling Code:</strong> +261</p>
-        <p><strong>Internet TLD:</strong> .mg</p>
+        <p><strong>Country:</strong> Chile</p>
+        <p><strong>Languages:</strong> Spanish</p>
+        <p><strong>Currency:</strong> Chilean Peso</p>
+        <p><strong>Time Zone:</strong> UTC-3</p>
+        <p><strong>Calling Code:</strong> +56</p>
+        <p><strong>Internet TLD:</strong> .cl</p>
     </section>
     <section class="weather">
         <h2>Weather</h2>
-        <img src="weather-icon.png" alt="Weather Icon">
-        <p><strong>Temperature:</strong> 10°C</p>
+        <img src="images/weather-icon.svg" alt="Weather Icon">
+        <p><strong>Temperature:</strong> 5°C</p>
         <p><strong>Conditions:</strong> Partly Cloudy</p>
-        <p><strong>Wind:</strong> 5 km/h</p>
-        <p><strong>Wind Chill:</strong> 9.8°C</p>
+        <p><strong>Wind:</strong> 18 km/h</p>
+        <p><strong>Wind Chill:</strong> 6°C</p>
     </section>
     <footer>
         <p> © <span id="currentyear"></span> | Julian Becerra | Bogota, Colombia</p>
