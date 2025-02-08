@@ -44,6 +44,23 @@
         padding: 10px;
         border-radius: 5px;
     }
+
+    .weather h2 {
+        position: relative;
+    }
+
+    .weather h2::after {
+        content: "⛅";
+        margin-left: 10px;
+        font-size: 1.2em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .weather img {
+        display: none;
+    }
     
     .data {
         top: 25%;
