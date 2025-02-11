@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julian Becerra">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Julian Alfredo Becerra Romero.">
+    <title>Temple Album - Julian Becerra</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="nav-button" data-filter="Home">Home</a></li>
+                <li><a href="#" class="nav-button" data-filter="Old">Old</a></li>
+                <li><a href="#" class="nav-button" data-filter="New">New</a></li> 
+                <li><a href="#" class="nav-button" data-filter="Large">Large</a></li>
+                <li><a href="#" class="nav-button" data-filter="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id="temple-container"></div>
+    </main>
+    <footer>
+        <p> © <span id="currentyear"></span> | Julian Becerra | Bogota, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="scripts/filtered-temples.js"></script>
+</body>
+</html>
