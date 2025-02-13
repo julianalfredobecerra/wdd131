@@ -1,0 +1,28 @@
+header{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    background-color:whitesmoke ;
+    justify-items: center;
+}
+
+h1, h2{
+    color: #000;
+    font-family: "Noto Sans", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p{
+    color:#000;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+footer{
+    padding: 8px;
+}
