@@ -4,11 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Review</title>
     <link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="thanks.html" class="wf1">
+            <fieldset>
+                <legend>Product Name</legend>
+                <select name="subject">
+                    <option value="">Choose a Product ...</option>
+                    <option value="mac">Mac</option>
+                    <option value="iphone">iPhone</option>
+                    <option value="ipad">iPad</option>
+                    <option value="watch">Apple Watch</option>
+                    <option value="vision">Apple Vision Pro</option>
+                    <option value="airpods">AirPods</option>
+                    <option value="airtag">AirTag</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="rating">
+                    <label><input type="radio" name="rating" value="1">☆</label>
+                    <label><input type="radio" name="rating" value="2">☆☆</label>
+                    <label><input type="radio" name="rating" value="3">☆☆☆</label>
+                    <label><input type="radio" name="rating" value="4">☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="5">☆☆☆☆☆</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <input type="date" name="installationDate">
+            </fieldset>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product? <em>(Check all that apply)</em></legend>
+                <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" name="ease" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" name="design" value="yes"> Design</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="message">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label>Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" name="name">
+            </fieldset>
+
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
     <footer>
         <p> © <span id="currentyear"></span> | Julian Becerra | Bogota, Colombia</p>
         <p id="lastModified"></p>
