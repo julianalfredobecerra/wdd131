@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review</title>
-    <link rel="stylesheet" href="styles/form.css">
+    <meta name="author" content="Julian Becerra">
+    <meta name="description" content="Feedback Colombian Treasures">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/feedback.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Product Review</h1>
+        <h1>Feedback</h1>
         <nav>
             <ul class="navigation">
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Destinations</a>
-                <a href="#">Contact</a>
+                <a href="#">Feedback</a>
             </ul>
-        </nav> 
+        </nav>
     </header>
     <main>
         <form method="get" action="review.html" class="wf1">
             <fieldset>
                 <legend>Place Name</legend>
-                <select id="product" name="product" required>
-                    <option value="">Choose a Product ...</option>
-                    <option value="mac">Mac</option>
-                    <option value="iphone">iPhone</option>
-                    <option value="ipad">iPad</option>
-                    <option value="watch">Apple Watch</option>
-                    <option value="vision">Apple Vision Pro</option>
-                    <option value="airpods">AirPods</option>
-                    <option value="airtag">AirTag</option>
-                    <option value="other">Other</option>
+                <select id="place" name="place" required>
+                    <option value="">Choose a Place ...</option>
+                    <option value="cristales">Caño Cristales</option>
+                    <option value="tayrona">Tayrona National Park</option>
+                    <option value="chicamocha">Chicamocha Canyon</option>
+                    <option value="nevados">Los Nevados National Natural Park</option>
+                    <option value="macarena">Serranía de la Macarena</option>
+                    <option value="islands">San Andrés and Providencia</option>
+                    <option value="leticia">Amazon Rainforest (Leticia)</option>
+                    <option value="tatacoa">Tatacoa Desertr</option>
                 </select>
             </fieldset>
             <fieldset>
@@ -45,24 +50,24 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Date of Installation</legend>
-                <input type="date" id="installation-date" name="installationDate" required>
+                <legend>When did you go?</legend>
+                <input type="date" id="trip-date" name="tripDate" required>
             </fieldset>
             <fieldset>
                 <div class="checkbox-group">
-                    <p><strong>Which features did you find useful in the product?</strong> <br>
+                    <p><strong>Which information did you find useful in the place information?</strong> <br>
                         <em>(Check all that apply)</em></p>
-                    <label for="durability">
-                        <input type="checkbox" id="durability" name="features" value="durability"> Durability
+                    <label for="what-to-bring">
+                        <input type="checkbox" id="what-to-bring" name="information" value="what-to-bring"> What to Bring
                     </label><br>
-                    <label for="ease-of-use">
-                        <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use"> Ease of Use
+                    <label for="estimated-time">
+                        <input type="checkbox" id="estimated-time" name="information" value="estimated-time"> Estimated Time
                     </label><br>
-                    <label for="performance">
-                        <input type="checkbox" id="performance" name="features" value="performance"> Performance
+                    <label for="prices">
+                        <input type="checkbox" id="prices" name="information" value="prices"> Prices
                     </label><br>
-                    <label for="design">
-                        <input type="checkbox" id="design" name="features" value="design"> Design
+                    <label for="food-recommendations">
+                        <input type="checkbox" id="food-recommendations" name="information" value="food-recommendations"> Food Recommendations
                     </label>
                 </div>
             </fieldset>
@@ -77,10 +82,6 @@
             <button type="submit">Post Review</button>
         </form>
     </main>
-    <footer>
-        <p> © <span id="currentyear"></span> | Julian Becerra | Bogota, Colombia</p>
-        <p id="lastModified"></p>
-    </footer>
-    <script defer src="scripts/form.js"></script>
+
 </body>
 </html>

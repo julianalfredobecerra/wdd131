@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julian Becerra">
+    <meta name="description" content="Colombian Treasures">
+    <title>Colombian Treasures</title>
+    <link rel="stylesheet" href="styles/colombian.css">
+    <link rel="stylesheet" href="styles/colombian-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Colombian Treasures</h1>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Destinations</a>
+                <a href="#">Feedback</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Houses" width="500" loading="lazy">
+            </picture>            
+        </div>
+        <div class="text-box">
+            <h2>More Than Just The Thrill</h2>
+            <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; 
+            it's way more than just the rapids. It's a great way to get away from it all and 
+            relax amongst all the beauty of the great outdoors.</p>
+            <a href="https://julianbrom1.github.io/wdd130/wwr/contact.html">Join Us</a>
+        </div>
+        <h1>Where Do You Want to Go Next?</h1>
+        <section>
+            <figure>
+                <img src="images/amazonas.webp" alt="Amazonas" loading="lazy">
+                <figcaption>Amazonas</figcaption>
+            </figure>
+            <figure>
+                <img src="images/quindio.webp" alt="Quindio" loading="lazy">
+                <figcaption>Quindio</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cartagena.webp" alt="Caribe" loading="lazy">
+                <figcaption>Caribe</figcaption>
+            </figure>
+            <figure>
+                <img src="images/guajira.webp" alt="Guajira" loading="lazy">
+                <figcaption>Guajira</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p> © <span id="currentyear"></span> | Julian Becerra | Bogota, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+<script src="scripts/colombian.js"></script>
+</body>
+</html>
